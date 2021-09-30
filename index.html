@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+</head>
+<body> 
+
+<!-- part 0 -->
+
+    <header class="part" id="part-0">
+        <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/zero.svg" alt="" class="left-header">
+        <div class="right">
+            <h1>wellcome!</h1>
+            <h2> Thanks&nbsp;for participating in&nbsp;the&nbsp;poll </h2> 
+           <div class="stand-in-line"> <a class="small" href="#part-1"> Let's go </a></div>
+        </div>
+      </header>
+
+<!-- part 1 -->
+
+   <section class="part" id="part-1">
+    <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/one.svg" alt="" class="left">
+    <div class="right">
+            <h2>Necessities of working in financial markets </h2>
+            <p class="text-one"> This research is to find the reasons for the failure of people in financial markets. The results of this survey will be emailed to you along with the analysis of our experienced experts. </p>
+        <div>
+            <a class="large" href="#part-0"> Back to Home </a>
+                <a class="large" href="#part-2"> Fill out the form </a>
+        </div>
+    </div>
+    </section>
+
+<!-- part 2 -->
+
+  <section class="part" id="part-2" >
+    <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/two.svg" alt="" class="left">
+    <form class="right-form">
+        <label for="status-account" class="label">  What is the status of your account? </label>
+        <select name="status-account" class="other-form-style">
+            <option value="Short-positive"> Short term investment with a positive slope </option>
+            <option value="long">I have made a long term investment </option>
+            <option value="blocked">Is blocked </option>
+            <option value="short-negative">Short term investment with a negative slope</option>
+            <option value="No-account" selected> I have not created an account yet </option>
+        </select>
+        
+
+        <div>
+        <label for="financial-markets" class="align-label label"> In which financial markets do you operate? </label> <br> 
+
+        <input type="radio" name="markets"> <label> stock market </label> <br>
+        <input type="radio" name="markets"> <label> foreign exchange </label> <br>
+        <input type="radio" name="markets"> <label> commodity </label>  <br>
+        <input type="radio" name="markets"> <label> bond market </label> <br>
+        <input type="radio" name="markets"> <label> cryptocurrency market </label> <br> <br>
+        </div>
+        <div class="stand-in-line">
+            <a class="small" href="#part-1">Back</a>
+                <a class="small" href="#part-3">Next</a>
+        </div>
+        <div>
+            <a class="large" href="#part-5">Skip</a>
+        </div>
+      
+      
+    </form>
+  </section>
+
+<!-- part 3 -->
+
+  <section class="part" id="part-3">
+    <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/three.svg" alt="" class="left">
+    <form class="right-form" id="right-form-align">
+        <label for="Decision" class="label"> How do you decide to invest?</label>
+        <select name="Decision" class="other-form-style">
+            <option value="friends">Recommend from trusted friends and acquaintances </option>
+            <option value="Consulting">Buy a signal or get advice from a consultant </option>
+            <option value="research">Individual research (complete research cycle) </option>
+            <option value="conjecture">Based on conjecture and emotion </option>
+            <option value="No-account" selected>I have not invested yet </option>
+        </select>
+
+        <div class="align-part-3">
+        <label for="financial-markets" class="align-label label"> What resources have you used or are you using for your training? </label> <br> 
+        <input type="checkbox"> <label class="checkbox-item"> Books and articles </label> <br>
+        <input type="checkbox"> <label class="checkbox-item"> YouTube tutorial videos </label> <br>
+        <input type="checkbox"> <label class="checkbox-item"> online or face to face courses </label>  <br>
+        <input type="checkbox"> <label class="checkbox-item"> experience with little investment </label> <br> <br>
+        </div>
+        <div class="stand-in-line">
+            <a class="small" href="#part-2">Back</a>
+                <a class="small" href="#part-4">Next</a>
+            </div>
+            <div>
+                <a class="large" href="#part-5">Skip</a>
+            </div>
+    </form>
+  </section>
+
+<!-- part 4 -->
+
+
+  <section class="part" id="part-4">
+    <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/four.svg" alt="" class="left">
+    <form class="right-form">
+        <label for="detail" class="label align-label">If you or someone close to you has already made a loss on the investment, write down the details</label>
+        <textarea name="text-detail" id="text-detail" ></textarea>
+        <div class="stand-in-line">
+            <a class="small" href="#part-3">Back</a>
+            <a class="small" href="#part-5">Next</a>
+            </div>
+            <div>
+                <a class="large" href="#part-5">Skip</a>
+            </div>
+    </form>
+  </section>
+
+<!-- part 5 -->
+
+
+  <footer class="part" id="part-5">
+    <img src="https://raw.githubusercontent.com/nasser-toghiri/FCC-Survey-Form/master/five.svg" alt="" class="left">
+    <form class="right-form">
+        <div class="align-footer">
+<label for="fullname" class="label">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname" placeholder="Nasser Toghiri" class="other-form-style"><br>
+<label for="email" class="label">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="N.Toghiri@Gmail.com" class="other-form-style"><br>
+<label for="age" class="label">Age:</label> <br>
+<input type="number" min="18" max="70" placeholder="--" id="age" name="age" class="age-form-style">
+</div>
+<a class="large" href="#part-4">Back</a>
+<a class="large" href="#part-0">submit</a>
+    </form>
+  </footer>
+
+
+
+</body>
+</html>
